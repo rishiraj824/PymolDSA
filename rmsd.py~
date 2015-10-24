@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 class Pdb(object):
     """ Object that allows operations with protein files in PDB format. """
 

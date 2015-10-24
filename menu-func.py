@@ -1,3 +1,4 @@
+
 import os
 import sys
 import subprocess
@@ -38,17 +39,18 @@ while loop ==1:
                
 
         if choice == 2:
-               print("2)RMSD")
-               cmd3 = "rmsd.py" + " " + fileN + " " + fileN
+               print("Room mean Square Difference: ")
+	       file2 = input("Enter File2 to get the Difference")	
+               cmd3 = "rmsd.py" + " " + fileN + " " + file2
                subprocess.Popen(cmd3, shell=True)
-               os.system(cmd3)
-               time.sleep(3)
+               sys.stdin.read(1)
+               
         if choice == 3:
                print("3)PDB to fasta conveter")
-               cmd1 = "pdftofasta.py" + " " + fileN
+               cmd1 = "~/PymolDSA/pdftofasta.py" + " " + fileN
                subprocess.Popen(cmd1, shell=True) 
                os.system(cmd1)
-               time.sleep(3)
+               sys.stdin.read(1)
 
         if choice == 4:
                print("4)B-factor")

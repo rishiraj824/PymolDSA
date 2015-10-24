@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # Sebastian Raschka 2014
 # Script that converts amino acid residues from a PDB file into a FASTA string
 
