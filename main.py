@@ -17,7 +17,8 @@ def addData():
     pdbid = raw_input('1)Enter PDB ID')
     orgname = raw_input('2)Enter Organism Name')
     filename=raw_input('3)Enter File Name')
-    sql = "INSERT INTO Proteins (serialno,accessid,orgname,hyperlink) values (4,'&s','%s','%s')" % (pdbid, orgname,filename)
+    sql = "INSERT INTO Proteins (serialno,accessid,orgname) values (4,'&s','%s')" % (pdbid, orgname,filename)
+    cur.execute(sql)
 
 
 def searchDatabase():
@@ -30,7 +31,12 @@ def searchDatabase():
         #     print row
          #    file1=row[1]+".pdb"
       #else: 
-      file1 = id+".pdb" 
+      sql = "SELECT * FROM Proteins WHERE PDBID='%s'" %(id)
+      if (cur.execute(sql)!=1)
+        sql1 = "INSERT INTO Proteins (serialno, accessid, orgname) values (4,'&s','%s')" % (pdbid, orgname,filename)
+        cur.execute(sql1)
+      else
+        file1 = id+".pdb" 
       #print "\n\n\n"
       #subprocess.Popen('menu-func.py',shell=True)
       

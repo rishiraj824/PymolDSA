@@ -2,20 +2,17 @@
 
 """
 Simple PDB parser
-Coded by Steve Moss (gawbul [at] gmail [dot] com)
-http://about.me/gawbul
 
-Slicing features by Pierre Poulain 
-http://cupnet.net/
 """
 
 # excerpts from PDB 3UNC
 # http://www.rcsb.org/pdb/explore/explore.do?structureId=3UNC
-fp = open('3NXY.pdb')
+fileName = raw_input('Enter fileName')
+fp = open(fileName)
 
 
 
-with open("3NXY.pdb", "r") as ins:
+with open(fileName, "r") as ins:
     data = ins.readlines()
     pdb = []
     for line in ins:
