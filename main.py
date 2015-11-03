@@ -32,11 +32,8 @@ def searchDatabase():
          #    file1=row[1]+".pdb"
       #else: 
       sql = "SELECT * FROM Proteins WHERE PDBID='%s'" %(id)
-      if (cur.execute(sql)!=1)
-        sql1 = "INSERT INTO Proteins (serialno, accessid, orgname) values (4,'&s','%s')" % (pdbid, orgname,filename)
-        cur.execute(sql1)
-      else
-        file1 = id+".pdb" 
+
+      file1 = id+".pdb" 
       #print "\n\n\n"
       #subprocess.Popen('menu-func.py',shell=True)
       
