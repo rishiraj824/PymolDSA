@@ -7,9 +7,8 @@ Simple PDB parser
 
 # excerpts from PDB 3UNC
 # http://www.rcsb.org/pdb/explore/explore.do?structureId=3UNC
-fileName = raw_input('Enter fileName')
-fp = open(fileName)
-
+fileName = raw_input('Enter file name')
+fp= open(fileName)
 
 
 with open(fileName, "r") as ins:

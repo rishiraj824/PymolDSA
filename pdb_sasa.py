@@ -11,6 +11,8 @@ pdb_sasa.py
 Calculate the solvent accessible surface area of every atom in a protein using
 NACCESS. 
 """
+__author__ = "Michael J. Harms"
+__date__ = "080129"
 
 import os, sys, copy, shutil
 
